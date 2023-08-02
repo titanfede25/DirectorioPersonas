@@ -1,7 +1,11 @@
+import { useParams } from "react-router-dom";
 export default function Persona() {
-    return (
-      <>
-          <h1>Soy la pagina de blog</h1>
-      </>
-    );
+  const { id } = useParams();
+
+
+  return (
+    <>
+        <h1>Soy la persona {`ID: ${id}`}</h1>
+    </>
+  );
   }

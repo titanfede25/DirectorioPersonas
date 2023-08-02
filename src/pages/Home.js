@@ -429,7 +429,7 @@ export default function Home() {
       <h1>Listado:</h1>
       {Personas.map((persona) => (
         <div key={persona.id}>
-          <Link to="/Persona/{persona.id}"><p>{persona.nombre} {persona.apellido}</p></Link> 
+          <Link to={`Persona/${persona.id}`}><p>{persona.nombre} {persona.apellido}</p></Link> 
         </div>
       ))}
     </div>
