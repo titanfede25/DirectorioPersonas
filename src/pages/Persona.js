@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Personas from "./Personas.json";
 
+
 export default function Persona() {
   const { id } = useParams();
   const persona = Personas.find((p)=>p.id===id)

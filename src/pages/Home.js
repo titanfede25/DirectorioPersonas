@@ -4,10 +4,14 @@ import Personas from "./Personas.json";
 export default function Home() {
   return (
     <div>
-      <h1>Listado:</h1>
+      <div className="TituloLista">
+      <u>Listado</u> 
+      </div>
       {Personas.map((persona) => (
+        <div className="Listita">
         <div key={persona.id}>
-          <Link to={`/Persona/${persona.id}`}><p>{persona.nombre} {persona.apellido}</p></Link> 
+          <Link to={`/Persona/${persona.id}`}><div className="NombreLista">{persona.nombre} {persona.apellido}</div></Link> 
+        </div>
         </div>
       ))}
     </div>

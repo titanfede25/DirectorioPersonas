@@ -14,18 +14,23 @@ export default function Stats() {
       mayor = persona.nombre + " " + persona.apellido;
       edadMayor = persona.edad;
     }
+    else if(persona.edad===edadMayor){
+      mayor = mayor + ", " + persona.nombre + " " + persona.apellido;
+    }
     if(persona.edad<edadMenor){
       menor = persona.nombre + " " + persona.apellido;
       edadMenor = persona.edad;
     }
+    else if (persona.edad===edadMenor){
+      menor = menor + ", " + persona.nombre + " " + persona.apellido;
+    }
   })
-  
+/*no muestra mas de una persona cuando hay dos de 19 años*/
     return (
       <>
-        <h1>{cantidadMayores}</h1>
-        <h1>{mayor}</h1>
-        <h1>{menor}</h1>
-
+        <h1>Cantidad personas mayores: {cantidadMayores}</h1>
+        <h1>Persona/s mayor/es: {mayor}</h1>
+        <h1>Persona/s menor/es: {menor}</h1>
       </>
     );
   }

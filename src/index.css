@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -23,8 +26,13 @@ ul{
 ul li{
   float: left;
   padding: 14px 16px;
+  padding-bottom: 2ex; 
+  margin-bottom: 5px;
+  border: 5px;
+  
 
 }
+
 a{
   color: white;
   text-decoration: none;
@@ -33,5 +41,46 @@ p{
   color: black;
 }
 .Listita{
+  color: rgb(255, 255, 255);
+  background-color:rgb(142, 200, 206);
+  font-family:'Times New Roman', Times, serif;
+  text-transform: capitalize;  
+    order: 2; 
+    font-weight: 3  0;
+    padding-top: 6px;
+    text-transform: uppercase;
+    height: 35px;
+    font-size: 20px;
+    line-height: 2em;
+    text-align: center;
+    border: rgb(83, 158, 148) 5px solid;
+    border-radius: 50px;
+    margin: 25px;
+    margin-top: 25px;
+    margin-right: 300px;
+    margin-left: 300px;
+    align-items:'flex',
+
+    
+}
+.TituloLista{
+  margin-top: 20px;
+  text-align: center;
   color: black;
+  font-size: 35px;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  line-height: 0.75em;
+}
+.NombreLista{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  height: auto;
+  font-size: 35px;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  line-height: 0.75em;
+  align-items:'flex',
 }
