@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  background-color:black;
 }
 
 code {
@@ -20,21 +20,22 @@ ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:rgb(73, 250, 132);
 }
 
 ul li{
   float: left;
   padding: 14px 16px;
-  padding-bottom: 2ex; 
-  margin-bottom: 5px;
+  padding-bottom: 1ex; 
+  margin-bottom: 1px;
   border: 5px;
-  
-
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  background-color:rgb(73, 250, 132);
 }
 
 a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
 p{
@@ -42,45 +43,182 @@ p{
 }
 .Listita{
   color: rgb(255, 255, 255);
-  background-color:rgb(142, 200, 206);
-  font-family:'Times New Roman', Times, serif;
+  background-color:rgb(73, 250, 132);
+  font-family: 'VT323', monospace;
   text-transform: capitalize;  
     order: 2; 
     font-weight: 3  0;
     padding-top: 6px;
     text-transform: uppercase;
-    height: 35px;
+    height: 40px;
     font-size: 20px;
     line-height: 2em;
     text-align: center;
-    border: rgb(83, 158, 148) 5px solid;
+    
     border-radius: 50px;
+   
     margin: 25px;
     margin-top: 25px;
-    margin-right: 300px;
-    margin-left: 300px;
-    align-items:'flex',
-
+    margin-right: 500px;
+    margin-left: 500px;
+    align-items:'flex';
+    display: block;
+    border-color: rgb(0, 0, 0);
+    clip-path: polygon(6px 12px,
+    12px 12px,
+    12px 6px,
+    calc(100% - 12px) 6px,
+    calc(100% - 12px) 12px,
+    calc(100% - 6px) 12px,
+    calc(100% - 6px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 6px),
+    12px calc(100% - 6px),
+    12px calc(100% - 12px),
+    6px calc(100% - 12px));
     
 }
 .TituloLista{
-  margin-top: 20px;
+  margin-top: 35px;
   text-align: center;
-  color: black;
-  font-size: 35px;
-  font-family:'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 75px;
+  font-family: 'VT323', monospace;
   text-transform: uppercase;
   text-transform: capitalize;
   line-height: 0.75em;
 }
 .NombreLista{
+  
   text-align: center;
   color: rgb(0, 0, 0);
   height: auto;
   font-size: 35px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'VT323', monospace;
+  line-height: 1em;
+  align-items:'flex';
+}
+
+
+.DetallesPersona{
+  text-align: left;
+  color: rgb(255, 255, 255);
+  height: auto;
+  font-size: 25px;
+  font-family: 'VT323', monospace;
+  line-height: 1em;
+  align-items:'flex';
+  text-transform: capitalize;
+  
+}
+.StatsPersona{
+  text-align: left;
+  color: rgb(255, 255, 255);
+  height: auto;
+  font-size: 25px;
+  font-family: 'VT323', monospace;
+  line-height: 1em;
+  align-items:'flex';
+  text-transform: capitalize;
+  text-transform: uppercase;
+  
+}
+form{
+  text-align: center;
+  margin-top:35px;
+}
+::placeholder{
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  text-transform:capitalize;
+}
+
+.TituloForm{
+  margin-top: 35px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 75px;
+  font-family: 'VT323', monospace;
   text-transform: uppercase;
   text-transform: capitalize;
   line-height: 0.75em;
-  align-items:'flex',
+}
+
+input{
+  width:230px;
+  height: 30px;
+}
+
+.pixel2 {
+  font-size: 25px;
+  color: white;
+  height: auto;
+  margin: 10px;
+  font-family: 'VT323';
+  
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  
+  cursor: pointer;
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pixel2:active {
+  top: 2px;
+}
+
+
+
+.pixel2 {
+  position: relative;
+  display: block;
+  margin: 10px;
+  padding-top: 5px;
+  margin-left: 850px;
+  margin-right: 850px;
+  font-family: 'VT323';
+  text-transform: uppercase;
+  
+  font-size: 25px;
+  color: white;
+}
+
+.pixel2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+  right: -10px;
+  background: rgb(73, 250, 132);
+  z-index: -1;
+}
+
+.pixel2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: rgb(73, 250, 132);
+  z-index: -1;
+}
+
+.pixel2 {
+  padding: 10px 10px;
+  position: relative;
+  background: rgb(73, 250, 132);
+  width: auto;
+  z-index: 2;
 }

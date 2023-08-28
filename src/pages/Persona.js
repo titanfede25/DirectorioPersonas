@@ -9,10 +9,14 @@ export default function Persona() {
 
   return (
     <>
-        <h1>{`Apellido: ${persona.apellido}`}</h1>
-        <h1>{`Nombre: ${persona.nombre}`}</h1>
-        <h1>{`Email: ${persona.email}`}</h1>
-        <h1>{`Edad: ${persona.edad}`}</h1>
+        
+          <div className="DetallesPersona">
+            <h1>{`Apellido: ${persona.apellido}`}</h1>
+            <h1>{`Nombre: ${persona.nombre}`}</h1>
+            <h1>{`Email: ${persona.email}`}</h1>
+            <h1>{`Edad: ${persona.edad}`}</h1>
+          </div>
+        
     </>
   );
   }

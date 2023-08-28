@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <div className="TituloLista">
-      <u>Listado</u> 
+      Listado de Personas 
       </div>
       {Personas.map((persona) => (
         <div className="Listita">
