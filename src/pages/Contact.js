@@ -10,8 +10,9 @@ export default function COntact() {
           <input type="number" placeholder="Edad" className="u-full-width" /><br></br><br></br>
           <input type="text" placeholder="Email"  className="u-full-width" />
           <br></br><br></br>
-          <div className="pixel2">Enviar Informacion</div>
-        </form>
+          
+      </form>
+      <div className="ContenedorBoton"><div className="pixel2">Enviar</div></div>
     </>
   );
 }

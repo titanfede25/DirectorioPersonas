@@ -222,3 +222,8 @@ input{
   width: auto;
   z-index: 2;
 }
+.ContenedorBoton{
+  text-align: center;
+  /*width:500px;
+  height: 30px;*/
+}
